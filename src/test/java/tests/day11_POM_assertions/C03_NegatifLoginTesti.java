@@ -18,7 +18,7 @@ public class C03_NegatifLoginTesti {
 
     QdPage qdPage= new QdPage();
 
-    @Test
+    @Test(groups = "smoke")
     public void negatifLogin1(){
         ReusableMethods.bekle(3);
         qdPage= new QdPage();
@@ -34,7 +34,7 @@ public class C03_NegatifLoginTesti {
     }
 
 
-    @Test
+    @Test(groups = {"smoke","mr1"})
     public void negatifLogin2(){
         qdPage= new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));

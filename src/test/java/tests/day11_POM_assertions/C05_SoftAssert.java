@@ -9,7 +9,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 
 public class C05_SoftAssert {
-    @Test
+    @Test(groups = "smoke")
     public void amazonTesti(){
         /*
             Genel olarak

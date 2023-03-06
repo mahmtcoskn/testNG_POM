@@ -5,7 +5,7 @@ import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 public class C02_PozitifLoginTesti {
-    @Test
+    @Test(groups = "smoke")
     public void pozitifLoginTesti(){
         // qd anasayfaya gidin
 
