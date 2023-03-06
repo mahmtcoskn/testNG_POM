@@ -59,7 +59,8 @@ public class C02_dependsOnMethods {
         String actualUrunIsmi= amazonPage.ilkUrunIsimElementi.getText();
 
         Assert.assertTrue(actualUrunIsmi.contains(expectedIcerik));
-
+        //Driver.driver.navigate().back();
+        //amazonPage.ilkUrun.click();
         Driver.closeDriver();
     }
 }

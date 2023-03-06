@@ -24,14 +24,15 @@ public class AmazonPage {
     @FindBy(id="twotabsearchtextbox")
     public static WebElement aramaKutusu;
 
-    @FindBy(xpath = "//span[@class='a-size-base-plus a-color-base a-text-normal']")
+    @FindBy(xpath = "//span[text()='\"Nutella\"']")
     public WebElement aramaSonucElementi;
 
-    @FindBy(xpath = "(//img[@class='s-image'])[1]")
+    @FindBy(xpath = "(//span[@class='a-size-base-plus a-color-base a-text-normal'])[1]")
     public WebElement ilkUrun;
 
     @FindBy(xpath = "//span[@id='productTitle']")
     public WebElement ilkUrunIsimElementi;
 
-
+    @FindBy(xpath = "//span[@class='a-button-text']")
+    public WebElement uyariKapatma;
 }
